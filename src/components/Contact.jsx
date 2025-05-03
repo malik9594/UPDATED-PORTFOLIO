@@ -10,7 +10,6 @@ const Contact = () => {
     const [phone, setPhone] = useState("");
 
        const handleSubmit  = () => {
-        // Prevent default form submission behavior
    
        const templateParams = {
          from_name: name,
