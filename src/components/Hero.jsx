@@ -6,6 +6,7 @@ import indeed from "../assets/indeed.png";
 import linkedin from "../assets/linkedin.png";
 import profile from "../assets/hassan-img.jpeg";
 import downloadCv from "../assets/hassan-cv.pdf";
+import heroImage from "../assets/hero-image.png";
 import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 const Hero = () => {
@@ -14,7 +15,11 @@ const Hero = () => {
       <div
         className="md:h-[550px] h-[500px] w-[450px] bg-gradient-to-r absolute from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] transform rotate-45
       z-0 right-2 top-28 rounded-3xl"
-      ></div>
+      >
+          <figure data-aos="fade-up" data-aos-delay="500" class="flex-1 flex justify-center md:justify-end mt-0 aos-init aos-animate">
+        <img src={heroImage} alt="hero image" class="h-[350px] sm:h-[170px] md:h-[450px] w-[280px] sm:w-[480px] object-cover transform  relative"/>
+    </figure>
+      </div>
       <Navbar />
       <main
         id="home"
@@ -27,22 +32,22 @@ const Hero = () => {
           data-aos-delay="500"
         >
           <div className="absolute -z-10 w-60 h-60 bg-[#cd3cf5] rounded-full blur-3xl opacity-50 -top-5 -left-12">
-           
+        
           </div>
           <header>
-              <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold text-white mb-4" style={{paddingLeft:'1rem'}}>
                 Hassan Malik
               </h1>
-              <h2 className="text-xl sm:text-4xl md:text-2xl font-bold text-[#3e0f4a] md:text-[#c744ec] mb-2">
+              <h2 className="text-xl sm:text-4xl md:text-2xl font-bold text-[#3e0f4a] md:text-[#c744ec] mb-2" style={{paddingLeft:'1rem'}}>
                 Frontend Developer
               </h2>
             </header>
-          <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6">
+          <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6" style={{paddingLeft:'1rem'}}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             ducimus similique quis odio architecto natus, esse earum,
             reprehenderit culpa officiis voluptates nihil. Odio!
           </p>
-          <div className="flex items-center space-x-4 mb-6">
+          <div className="flex items-center space-x-4 mb-6" style={{paddingLeft:'1rem'}}>
             <a href="#">
               {/* <img src={github}  alt="Linkedin" className="w-11 h-11 mix-blend-overlay" /> */}
               <FaGithub className="w-11 h-11 text-white"/>            </a>
@@ -59,7 +64,7 @@ const Hero = () => {
               <SiIndeed className="w-11 h-11 text-white" />
             </a>
           </div>
-          <a href={downloadCv} download>
+          <a href={downloadCv} download style={{paddingLeft:'1rem'}}>
             <button
               className=" inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c]
                     hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg cursor-pointer"
@@ -73,11 +78,11 @@ const Hero = () => {
           data-aos-delay="500"
           className="flex-1 flex justify-center md:justify-end mt-0"
         >
-          <img
+          {/* <img
             src={profile}
             alt="hero image"
-            className="h-[300px] sm:h-[400px] md:h-[485px] w-[250px] sm:w-[480px]  object-cover"
-          />
+            className="h-[250px] sm:h-[350px] md:h-[350px] w-[180px] sm:w-[480px]  object-cover"
+          /> */}
         </figure>
       </main>
     </div>
