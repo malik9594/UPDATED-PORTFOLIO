@@ -10,7 +10,9 @@ const Contact = () => {
     const [phone, setPhone] = useState("");
 
        const handleSubmit  = () => {
-   
+if(!name || !email || !message || !phone) {
+  alert("Please fill in all fields.");}
+  else {  
        const templateParams = {
          from_name: name,
          user_email: email,
@@ -40,6 +42,8 @@ const Contact = () => {
        setEmail("");
        setPhone("");
        setMessage("");
+      alert("Message sent successfully!");
+      }
      };
   return (
     <section

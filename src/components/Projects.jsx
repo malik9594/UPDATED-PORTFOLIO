@@ -1,5 +1,8 @@
 import React from "react";
-
+import Pvs from "../assets/Pvs.png";
+import Sontpic from '../assets/Sontpic.png';
+import CL from '../assets/CommutersLink.jpg';
+import drap from '../assets/DRAP.png';
 const ProjectCard = ({ image, title, description, link }) => {
   return (
     <article className="relative max-w-sm bg-gray-800 rounded overflow-hidden shadow-lg group">
@@ -7,7 +10,7 @@ const ProjectCard = ({ image, title, description, link }) => {
       <div className="relative z-10">
         <figure className="relative">
           <img
-            src=""
+            src={image}
             alt={title}
             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
           />
@@ -18,7 +21,7 @@ const ProjectCard = ({ image, title, description, link }) => {
             className="absolute h-[202px] inset-0 flex items-center justify-center bg-purple-800 bg-opacity-50 opacity-0
                 group-hover:opacity-100 transition-opacity duration-300"
           >
-            <button className="bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover:text-white hover:bg-[#2879d5]">
+            <button className="bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover:text-white hover:bg-[#2879d5] cursor-pointer">
               Live Preview
             </button>
           </a>
@@ -36,32 +39,32 @@ const ProjectCard = ({ image, title, description, link }) => {
 
 const listProjects = [
   {
-    image: "",
-    title: "Portfolio Website 1",
+    image: Pvs,
+    title: "PVSIS",
     description:
       "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
-    link: "",
+    link: "https://www.woah.org/en/home/",
   },
   {
-    image: "",
-    title: "Portfolio Website 2",
+    image: Sontpic,
+    title: "SONT",
     description:
       "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
-    link: "",
+    link: "https://www.woah.org/en/home/",
   },
   {
-    image: "",
-    title: "Portfolio Website 3",
+    image: CL,
+    title: "Commuters Link",
     description:
       "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
-    link: "",
+    link: "https://commuterslink.com/",
   },
   {
-    image: "",
-    title: "Portfolio Website 4",
+    image: drap,
+    title: "DRAP",
     description:
       "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
-    link: "",
+    link: "http://drap.sysreformsint.com/",
   },
   {
     image: "",
@@ -88,7 +91,7 @@ const Projects = () => {
       <section
         data-aos="fade-up"
         data-aos-delay="500"
-        className="flex flex-wrap gap-4 justify-center mt-6"
+        className="flex flex-wrap gap-4 justify-center mt-6 "
       >
         {listProjects.map((project, index) => (
           <ProjectCard
