@@ -64,7 +64,7 @@ const listProjects = [
     title: "DRAP",
     description:
       "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
-    link: "http://drap.sysreformsint.com/",
+    link: "",
   },
   {
     image: "",
