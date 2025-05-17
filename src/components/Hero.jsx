@@ -11,6 +11,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 const Hero = () => {
   return (
+    <>
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[600px] flex flex-col items-center">
       <div
         className="md:h-[550px] h-[500px] w-[450px] bg-gradient-to-r absolute from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] transform rotate-45
@@ -20,7 +21,7 @@ const Hero = () => {
         <img src={heroImage} alt="hero image" class="h-[350px] sm:h-[170px] md:h-[450px] w-[280px] sm:w-[480px] object-cover transform  relative"/>
     </figure>
       </div>
-      <Navbar />
+      
       <main
         id="home"
         className="flex flex-col md:flex-row items-center justify-center
@@ -85,7 +86,8 @@ const Hero = () => {
           /> */}
         </figure>
       </main>
-    </div>
+    </div></>
+    
   );
 };
 

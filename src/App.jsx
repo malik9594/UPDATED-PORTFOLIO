@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
   }, []);
   return (
     <main className="bg-gray-950">
+      <Navbar/>
       <Hero />
       <About/>
       <Skills />
