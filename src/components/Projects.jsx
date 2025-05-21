@@ -3,6 +3,7 @@ import Pvs from "../assets/Pvs.png";
 import Sontpic from '../assets/Sontpic.png';
 import CL from '../assets/CommutersLink.jpg';
 import drap from '../assets/Drap.png';
+import pos from '../assets/POS.png';
 const ProjectCard = ({ image, title, description, link }) => {
   return (
     <article className="relative max-w-sm bg-gray-800 rounded overflow-hidden shadow-lg group">
@@ -42,35 +43,35 @@ const listProjects = [
     image: Pvs,
     title: "PVSIS",
     description:
-      "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
+      "The PVS Pathway is designed to empower national Veterinary Services by providing a comprehensive assessment of their strengths, weakness, and opportunities for improvements and this project is owned by WOAH.",
     link: "https://www.woah.org/en/home/",
   },
   {
     image: Sontpic,
     title: "SONT",
     description:
-      "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
+      "This project is also owned by WOAH. In this project we have developed an online tool in which animal disease content is available at online platform in which user can search, upload, format document, switch languages in English, French and Spanish and download in pdf form.",
     link: "https://www.woah.org/en/home/",
   },
   {
     image: CL,
     title: "Commuters Link",
     description:
-      "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
+      "This website is designed for share commute with passengers during the travelling and make a partner on daily basis or weekly basis.",
     link: "https://commuterslink.com/",
   },
   {
     image: drap,
     title: "DRAP",
     description:
-      "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
+      "I worked on the Drug Regulatory Authority Pakistan,Managing the license workflow and Develop a Track & Trace Module. In the project we have all data of pharmacy in Pakistan on the region base and have record through track and trace system of medicine for pharmaceutical company to pharmacy.",
     link: "http://drap.sysreformsint.com/",
   },
   {
-    image: "",
-    title: "Portfolio Website 5",
+    image: pos,
+    title: "POS",
     description:
-      "This is a portfolio website built using React and Tailwind CSS. It showcases my projects and skills.",
+      "Point of Sale is for restaurant and this is local deployment and this is developed with React.js, tailwind.css and Node.js",
     link: "",
   },
 ];
