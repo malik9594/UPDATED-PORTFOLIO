@@ -1,7 +1,7 @@
 import React from "react";
-import aboutpic1 from '../assets/about-1.png'
-import aboutpic2 from '../assets/about-img-center.jpg';
-import aboutpic3 from '../assets/about-img.png';
+import aboutpic1 from "../assets/about-1.png";
+import aboutpic2 from "../assets/about-img-center.jpg";
+import aboutpic3 from "../assets/about-img.png";
 
 const About = () => {
   return (
@@ -15,10 +15,10 @@ const About = () => {
           data-aos-delay="500"
           className="flex flex-wrap justify-center gap-4 relative"
         >
-          <div 
-        //   className="h-[200px] sm:h-[300px] w-[300px] sm:w-[400px] lg:h-[300px] lg:w-[500px] bg-gradient-to-1 from-[#6d2897] via-[#6c95f5] to-[#bb61c5] absolute transform rotate-12 z-0 right-5 -top-2 md:top-10 rounded-full"
-         className="rotate-12"
-         >
+          <div
+            //   className="h-[200px] sm:h-[300px] w-[300px] sm:w-[400px] lg:h-[300px] lg:w-[500px] bg-gradient-to-1 from-[#6d2897] via-[#6c95f5] to-[#bb61c5] absolute transform rotate-12 z-0 right-5 -top-2 md:top-10 rounded-full"
+            className="rotate-12"
+          >
             <img
               src={aboutpic1}
               alt="about picture 1"
@@ -28,7 +28,7 @@ const About = () => {
               src={aboutpic2}
               alt="about picture 2"
               className="realtive z-10 w-35 h-44 s:w-40 sm-h-40 md:w-80 md:h-96 rounded-lg shadow-lg"
-            // className="relative z-10 sm:top-30 h-44 rounded-full shadow-lg"
+              // className="relative z-10 sm:top-30 h-44 rounded-full shadow-lg"
             />
             <img
               src={aboutpic3}
@@ -48,19 +48,17 @@ const About = () => {
               About me
             </h1>
           </header>
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quos
-            expedita a consequatur. Facilis ipsa, corporis similique autem
-            consequatur iure saepe minus qui repudiandae pariatur dignissimos
-            non exercitationem, perspiciatis reprehenderit. Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Fugiat, ab maiores sapiente
-            cupiditate iste saepe temporibus commodi, natus accusantium quis ex
-            nesciunt voluptate. Odit laudantium temporibus nisi error reiciendis
-            vitae?
+          <p className="text-base sm:text-lg md:text-xl text-justify text-gray-300 mb-6 sm:mb-8 leading-relaxed">
+            I am Frontend Developer with a keen eye for design, seamless
+            animations, and robust component architecture. I am also Crafting
+            elegant, scalable, and high-performance web experience with modern
+            technologies. And I am passionate about building intuitive
+            interfaces, optimizing performance, and solving complex UI
+            challenges with creativity and precision.
           </p>
           <footer>
             <button className="inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg">
-                Learn More!!
+              Learn More!!
             </button>
           </footer>
         </article>

@@ -44,15 +44,14 @@ const Hero = () => {
               </h2>
             </header>
           <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6" style={{paddingLeft:'1rem'}}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            ducimus similique quis odio architecto natus, esse earum,
-            reprehenderit culpa officiis voluptates nihil. Odio!
+            Specialize in frontend development with a strong focus on React, JavaScript and modern styling 
+            tools like Tailwind CSS, Material UI, Bootstrap, Aceternity UI and Chakra!
           </p>
           <div className="flex items-center space-x-4 mb-6" style={{paddingLeft:'1rem'}}>
-            <a href="#">
+            <a href="https://github.com/malik9594SysReforms">
               {/* <img src={github}  alt="Linkedin" className="w-11 h-11 mix-blend-overlay" /> */}
               <FaGithub className="w-11 h-11 text-white"/>            </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/hassan-raza-a83950219/">
               {/* <img src={linkedin} alt="Linkedin" className="w-11 h-11" /> */}
               <FaLinkedin className="w-11 h-11 text-white" />
             </a>
