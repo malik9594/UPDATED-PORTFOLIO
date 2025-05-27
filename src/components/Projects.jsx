@@ -69,7 +69,7 @@ const listProjects = [
     link: "http://drap.sysreformsint.com/",
   },
   {
-    image: pos,
+    image: pos ,
     title: "POS",
     description:
       "Point of Sale is for restaurant and this is local deployment and this is developed with React.js, tailwind.css and Node.js",
