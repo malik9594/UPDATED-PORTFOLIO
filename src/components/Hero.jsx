@@ -60,7 +60,6 @@ const Hero = () => {
               <FaFacebook className="w-11 h-11 text-white" />
             </a>
             <a href="https://profile.indeed.com/?hl=en_PK&co=PK&from=gnav-homepage" target="_blank">
-              {/* <img src={indeed} alt="Linkedin" className="w-11 h-11" /> */}
               <SiIndeed className="w-11 h-11 text-white" />
             </a>
           </div>
