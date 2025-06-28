@@ -63,9 +63,9 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg cursor-pointer">
+          <a  href="//api.whatsapp.com/send?phone=923349594377&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND" target="_blank"  className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg cursor-pointer">
             Contact
-          </button>
+          </a>
         </nav>
       </div>
       {/* Mobile Navigation */}

@@ -48,18 +48,18 @@ const Hero = () => {
             tools like Tailwind CSS, Material UI, Bootstrap, Aceternity UI and Chakra!
           </p>
           <div className="flex items-center space-x-4 mb-6" style={{paddingLeft:'1rem'}}>
-            <a href="https://github.com/malik9594SysReforms">
+            <a href="https://github.com/malik9594SysReforms" target="_blank">
               {/* <img src={github}  alt="Linkedin" className="w-11 h-11 mix-blend-overlay" /> */}
               <FaGithub className="w-11 h-11 text-white"/>            </a>
-            <a href="https://www.linkedin.com/in/hassan-raza-a83950219/">
+            <a href="https://www.linkedin.com/in/hassan-raza-a83950219/" target="_blank">
               {/* <img src={linkedin} alt="Linkedin" className="w-11 h-11" /> */}
               <FaLinkedin className="w-11 h-11 text-white" />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/hassan.raza.379053" target="_blank">
               {/* <img src={facebook} alt="Linkedin" className="w-11 h-11" /> */}
               <FaFacebook className="w-11 h-11 text-white" />
             </a>
-            <a href="#">
+            <a href="https://profile.indeed.com/?hl=en_PK&co=PK&from=gnav-homepage" target="_blank">
               {/* <img src={indeed} alt="Linkedin" className="w-11 h-11" /> */}
               <SiIndeed className="w-11 h-11 text-white" />
             </a>
