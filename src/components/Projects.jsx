@@ -92,8 +92,7 @@ const Projects = () => {
             My <span className="text-purple-400">Projects</span>
           </h1>
           <p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolor
-            eos corrupti.
+            These all projects all my contribution and I have learned a lot from these projects.
           </p>
         </header>
       </section>
