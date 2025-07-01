@@ -48,7 +48,7 @@ const Hero = () => {
             tools like Tailwind CSS, Material UI, Bootstrap, Aceternity UI and Chakra!
           </p>
           <div className="flex items-center space-x-4 mb-6" style={{paddingLeft:'1rem'}}>
-            <a href="https://github.com/malik9594SysReforms" target="_blank">
+            <a href="https://github.com/malik9594" target="_blank">
               {/* <img src={github}  alt="Linkedin" className="w-11 h-11 mix-blend-overlay" /> */}
               <FaGithub className="w-11 h-11 text-white"/>            </a>
             <a href="https://www.linkedin.com/in/hassan-raza-a83950219/" target="_blank">
