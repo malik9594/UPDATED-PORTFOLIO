@@ -5,6 +5,7 @@ import CL from '../assets/CommutersLink.jpg';
 import drap from '../assets/Drap.png';
 import pos from '../assets/POS.png';
 import yedpay from '../assets/Yedpay.png';
+import icao from '../assets/icao.png'
 const ProjectCard = ({ image, title, description, link }) => {
   return (
     <article className="relative max-w-sm bg-gray-800 rounded overflow-hidden shadow-lg group">
@@ -82,6 +83,11 @@ const listProjects = [
       "In this project we have developed a payment system in which user can pay amount, have record of all transactions, check total sales and have a platform to refund the amount.In this Project we have used Next.js, tailwind.css",
     link: "",
   },
+  {image: icao,
+    title:"ICAO",
+    description:"The project supports ICAO’s global roadmap for transitioning from Aeronautical Information Services (AIS) to Aeronautical Information Management (AIM). The tracking website helps States monitor, report, and benchmark their progress across the 21 interrelated steps of AIM implementation",
+    link:"https://icao.sysreformsint.com/login",
+  }
 ];
 const Projects = () => {
   return (

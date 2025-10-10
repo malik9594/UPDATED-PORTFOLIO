@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@keyframes move-horizontal {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(40px); }
+}
+.animate-move-horizontal {
+  animation: move-horizontal 4s ease-in-out infinite;
+}

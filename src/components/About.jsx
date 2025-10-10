@@ -49,17 +49,18 @@ const About = () => {
             </h1>
           </header>
           <p className="text-base sm:text-lg md:text-xl text-justify text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-            I am Frontend Developer with a keen eye for design, seamless
-            animations, and robust component architecture. I am also Crafting
-            elegant, scalable, and high-performance web experience with modern
-            technologies. And I am passionate about building intuitive
-            interfaces, optimizing performance, and solving complex UI
-            challenges with creativity and precision.
+            I’m a Full Stack Developer with a keen eye for design, seamless
+            animations, and scalable architecture—from intuitive frontend
+            interfaces to robust backend systems. I craft elegant,
+            high-performance web experiences using modern technologies across
+            the stack. Passionate about building responsive UIs, optimizing
+            performance, and solving complex engineering challenges with
+            creativity, precision, and clean code.
           </p>
           <footer>
-            <button className="inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg">
+            <a href="#projects" className="inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg">
               Learn More!!
-            </button>
+            </a>
           </footer>
         </article>
       </div>

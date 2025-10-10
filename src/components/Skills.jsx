@@ -9,7 +9,11 @@ import limg from "../assets/AI-left avater.jpg";
 import aiAvatar from "../assets/AI-avatar.avif";
 import aceternity from "../assets/Aceternity.avif";
 import chakra from "../assets/chakra.png";
-
+import node from "../assets/Node.png";
+import express from '../assets/expressjs.png';
+import mongodb from '../assets/MongoDB.png';
+import mysql from '../assets/mysql.png';
+import { motion } from "framer-motion";
 const skillsData = [
   {
     id: 1,
@@ -60,20 +64,69 @@ const skillsData = [
     description:
       "Chakra UI is a simple, modular, and accessible component library for React applications. It enables developers to build responsive and themeable interfaces quickly using a style props-based approach and built-in accessibility features.",
   },
+   {
+    id: 8,
+    image: node,
+    title: "Node js",
+    description:
+      "Node.js is a powerful JavaScript runtime built on Chrome's V8 engine. It enables server-side development with JavaScript, allowing you to build fast, scalable, and efficient backend applications and APIs using a non-blocking, event-driven architecture.",
+  },
+  {
+    id:9,
+    image: express,
+    title: "Express js",
+    description:
+    "Express.js is a fast, minimal, and flexible Node.js web application framework. It simplifies building robust APIs and web servers by providing powerful routing, middleware support, and a wide range of HTTP utilities.",
+  },
+   {
+    id:10,
+    image: mongodb,
+    title: "MongoDB",
+    description:
+    "MongoDB is a flexible, document-oriented NoSQL database designed for scalability and high performance. It stores data in JSON-like documents, making it easy to work with complex data structures and build modern, data-driven applications.",
+  },
+    {
+    id:11,
+    image: mysql,
+    title: "MySQL",
+    description:
+    "MySQL is a widely used open-source relational database management system. It is known for its reliability, speed, and ease of use, making it ideal for storing and managing structured data in web applications and enterprise solutions.",
+  }
 ];
 
 const SkillBox = ({ image, title, description }) => (
-  <article className="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-center hover:bg-purple-800 transition-all duration-300">
+  <motion.article
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    whileHover={{
+      scale: 1.08,
+      boxShadow: "0 8px 40px 0 #a21caf55",
+      transition: { duration: 0.3 },
+    }}
+    transition={{ duration: 0.5, type: "spring" }}
+    viewport={{ once: true }}
+    className="relative bg-white/10 backdrop-blur-md p-5 sm:p-7 rounded-3xl shadow-2xl text-center overflow-hidden group cursor-pointer border border-purple-400/30"
+  >
+    {/* Animated Glow */}
+    <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-purple-500 via-pink-400 to-blue-400 opacity-0 group-hover:opacity-30 blur-2xl transition duration-500 pointer-events-none"></div>
     <figure className="flex justify-center mb-4">
-      <img src={image} alt={title} className="w-16 h-16 sm:w-20 sm:h-20" />
+      <motion.img
+        src={image}
+        alt={title}
+        className="w-16 h-16 sm:w-20 sm:h-20 drop-shadow-lg"
+        whileHover={{ rotate: 12, scale: 1.15 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      />
     </figure>
     <header>
-      <h3 className="text-lg sm:text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-lg sm:text-xl font-bold mb-2 text-purple-300 group-hover:text-white transition">
+        {title}
+      </h3>
     </header>
-    <p className="text-gray-400 text-sm sm:text-base text-justify">
+    <p className="text-gray-300 text-sm sm:text-base text-justify group-hover:text-gray-100 transition">
       {description}
     </p>
-  </article>
+  </motion.article>
 );
 const Skills = () => {
   return (
