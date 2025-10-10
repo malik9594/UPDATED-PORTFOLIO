@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import aiAvatar from "../assets/AI-avatar.avif";
 import limg from "../assets/AI-left avater.jpg";
-import emailjs from "emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
     const [name, setName] = useState("");
