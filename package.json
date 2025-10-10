@@ -21,10 +21,10 @@
     "vite": "^6.3.1"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.4",
     "aos": "^2.3.4",
     "emailjs": "^4.0.3",
-    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.22",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
